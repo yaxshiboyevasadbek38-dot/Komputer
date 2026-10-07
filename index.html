@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="uz">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>TECH STORE</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <header>
+        <h1>💻 TECH STORE</h1>
+        <p>Eng yaxshi kompyuterlar do‘koni</p>
+    </header>
+
+    <nav>
+        <a href="#home">Bosh sahifa</a>
+        <a href="#products">Kompyuterlar</a>
+        <a href="#cart">Savat</a>
+        <a href="#about">Biz haqimizda</a>
+    </nav>
+
+    <section class="hero" id="home">
+        <h2>Yangi kompyuteringizni tanlang!</h2>
+        <p>Gaming va ofis kompyuterlari</p>
+        <button onclick="showProducts()">Mahsulotlarni ko‘rish</button>
+    </section>
+
+    <section id="products" class="products-section">
+        <h2>🖥️ Kompyuterlar</h2>
+
+        <div class="products">
+
+            <div class="card">
+                <div class="computer">🖥️</div>
+                <h3>Gaming PC Pro</h3>
+                <p>Intel Core i7 | RTX 4060 | 16GB RAM</p>
+                <h4>12 000 000 so‘m</h4>
+
+                <button onclick="addToCart('Gaming PC Pro', 12000000)">
+                    Savatga qo‘shish
+                </button>
+            </div>
+
+            <div class="card">
+                <div class="computer">💻</div>
+                <h3>Office Laptop</h3>
+                <p>Intel Core i5 | 8GB RAM | 512GB SSD</p>
+                <h4>7 500 000 so‘m</h4>
+
+                <button onclick="addToCart('Office Laptop', 7500000)">
+                    Savatga qo‘shish
+                </button>
+            </div>
+
+            <div class="card">
+                <div class="computer">🖥️</div>
+                <h3>Gaming PC Ultra</h3>
+                <p>Intel Core i9 | RTX 4070 | 32GB RAM</p>
+                <h4>18 000 000 so‘m</h4>
+
+                <button onclick="addToCart('Gaming PC Ultra', 18000000)">
+                    Savatga qo‘shish
+                </button>
+            </div>
+
+        </div>
+    </section>
+
+    <section class="cart" id="cart">
+        <h2>🛒 Savat</h2>
+
+        <div id="cartItems">
+            Savat hozircha bo‘sh.
+        </div>
+
+        <h3 id="total">Jami: 0 so‘m</h3>
+
+        <button class="buy" onclick="buyProducts()">
+            Xarid qilish
+        </button>
+    </section>
+
+    <section id="about" class="about">
+        <h2>Biz haqimizda</h2>
+
+        <p>
+            TECH STORE — sifatli va zamonaviy
+            kompyuterlarni taklif qiluvchi onlayn do‘kon.
+        </p>
+    </section>
+
+    <footer>
+        <p>© 2026 TECH STORE</p>
+    </footer>
+
+    <!-- JavaScript alohida fayldan ulanadi -->
+    <script src="java.js"></script>
+
+</body>
+</html>
